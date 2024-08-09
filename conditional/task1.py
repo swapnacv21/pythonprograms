@@ -12,9 +12,9 @@
 # else:
 #     print("b is larger")
 
-a=input("enter a no")
-b=input("enter a no")
-if a<b:
-    print("a is smaller")
-else:
-    print("a is not less than b")
+# a=input("enter a no")
+# b=input("enter a no")
+# if a<b:
+#     print("a is smaller")
+# else:
+#     print("a is not less than b")
