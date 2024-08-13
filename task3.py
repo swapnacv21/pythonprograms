@@ -54,5 +54,17 @@
 #     print("invalid")
 
 # question 5 last digit divisible by 3 or not:
-number=int(input("enter a number"))
-if
+# number=int(input("enter a number"))
+# if()
+
+
+
+
+# question 6 tax:
+cost=int(input("enter price of the bike"))
+if (cost>100000):
+    print("road tax to be paid is",(cost*0.15)+cost)
+elif(cost>=50000):
+    print("road tax to be paid is",(cost*0.1)+cost)
+else:
+    print("road tax to be paid is",(cost*0.05)+cost)
