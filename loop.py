@@ -1,10 +1,10 @@
 # while loop:
 # example 1:
 
-# a=1
-# while a<=10:
-#     print(a)
-#     a+=1
+a=1
+while a<=10:
+    print(a)
+    a+=1
 
 # example 2:
 # a=int(input("enter starting number"))
@@ -23,15 +23,23 @@
 #     a+=1
 # print(s)
 
+
+
+
+
+
+
+
 # question 2: even numbers:
 
-a=int(input("enter starting number"))
-b=int(input("enter ending number"))
-while a<=b:
-    if a%2==0:
-        print(a)
-    a+=1
-    
+# a=int(input("enter starting number"))
+# b=int(input("enter ending number"))
+# while a<=b:
+#     if a%2==0:
+#         print(a)
+#     a+=1
+
+
 
 
 
