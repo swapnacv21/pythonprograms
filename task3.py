@@ -61,10 +61,10 @@
 
 
 # question 6 tax:
-cost=int(input("enter price of the bike"))
-if (cost>100000):
-    print("road tax to be paid is",(cost*0.15)+cost)
-elif(cost>=50000):
-    print("road tax to be paid is",(cost*0.1)+cost)
-else:
-    print("road tax to be paid is",(cost*0.05)+cost)
+# cost=int(input("enter price of the bike"))
+# if (cost>100000):
+#     print("road tax to be paid is",(cost*0.15)+cost)
+# elif(cost>=50000):
+#     print("road tax to be paid is",(cost*0.1)+cost)
+# else:
+#     print("road tax to be paid is",(cost*0.05)+cost)

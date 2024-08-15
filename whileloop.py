@@ -1,12 +1,13 @@
 # while loop:
-# example 1:
+# example 1:natural numbers
 
-a=1
-while a<=10:
-    print(a)
-    a+=1
+# a=1
+# while a<=10:
+#     print(a)
+#     a+=1
 
-# example 2:
+# example 2:numbers b/w 2 values 
+
 # a=int(input("enter starting number"))
 # b=int(input("enter ending number"))
 # while a<=b:
@@ -39,7 +40,14 @@ while a<=10:
 #         print(a)
 #     a+=1
 
+# question 3: odd numbers:
 
+# a=int(input("enter starting number"))
+# b=int(input("enter ending number"))
+# while a<=b:
+#     if a%2==1:
+#         print(a)
+#     a+=1
 
 
 

@@ -52,10 +52,10 @@
 
 # reverse of a string :
 
-a=input("enter a string")
-rev=""
-l=len(a)-1
-while l>=0:
-    rev+=a[l]
-    l-=1
-print(rev)
+# a=input("enter a string")
+# rev=""
+# l=len(a)-1
+# while l>=0:
+#     rev+=a[l]
+#     l-=1
+# print(rev)
