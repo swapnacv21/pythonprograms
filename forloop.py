@@ -49,16 +49,16 @@
 
 # question 6) multiplication table:
 
-a=int(input("enter a number"))
-for i in range(1,11):
-    print(a,"*",i,"=",a*i)
+# a=int(input("enter a number"))
+# for i in range(1,11):
+#     print(a,"*",i,"=",a*i)
 
 # question 7) reverse of a number:
 
-# a=int(input("enter a number"))
-# rev=0
-# while num>0:
-#     digit=num%10
-#     rev=rev*10+digit
-#     num=num//10
-# print(rev)
+a=int(input("enter a number"))
+rev=0
+for i in range(a):
+    
+
+# question 8) sum of digits:
+
