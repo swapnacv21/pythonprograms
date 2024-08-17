@@ -102,8 +102,69 @@
 
 # pattern 8:
 
-for i in range(3):
-        for j in range(3):
-            j%2==1
-            print(j*j,end="  ")
-        print()
+# for i in range(3):
+#         for j in range(3):
+#             j%2==1
+#             print((i+j)**2,end="  ")
+#         print()
+# output:
+# 0  1  4  
+# 1  4  9  
+# 4  9  16  
+
+# pattern 9:
+
+# for i in range(1,4):
+#     for j in range(i):
+#         print(j,end=" ")
+#     print()
+
+# output:
+# 0 
+# 0 1 
+# 0 1 2 
+
+# pattern 10:
+
+# a=0
+# for i in range(1,4):
+#     # print("i=",i)
+#     for j in range(i):
+#         print(a,end=" ")
+#         a+=1
+#     print()
+
+# output:
+# 0 
+# 1 2 
+# 3 4 5 
+
+
+# pattern 11:
+
+# a=0
+# for i in range(1,4):
+#     for j in range(i):
+#         print(a,end="  ")
+#     print()
+#     a+=1
+
+# output:
+# 0  
+# 1  1  
+# 2  2  2 
+
+
+# pattern 12:
+# a=0
+# for i in range(1,4):
+#     for j in range(i):
+#         print(a-j,end="  ")
+#     print()
+#     a+=1
+
+# output:
+# 0  
+# 1  0  
+# 2  1  0  
+   
