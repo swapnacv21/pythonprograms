@@ -2,7 +2,11 @@
 
 # sum of odd umbers and even numbers:
 
-# l=[1,2,3,4,5,6]
+l=[1,2,3,4,5,6]
+a=l[0]
+for i in l:
+    if i%2==1:
+        print(i)
 
 # question 2:
 
