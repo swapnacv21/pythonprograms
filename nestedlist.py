@@ -42,7 +42,7 @@ while True:
     elif choice==5:
         break
     else:
-        print("Invali choice")
+        print("Invalid choice")
 
 
 

@@ -1,3 +1,4 @@
+import datetime
 employee=[]
 while True:
     print(
@@ -23,10 +24,10 @@ while True:
         experience=int(input("Enter year of experience : "))
         employee.append([id,name,age,phone,place,position,salary,experience])
     elif choice==2:
-        print('{:<5}{:<8}{:<8}{:<12}{:<12}{:<10}{:<10}{:<5}'.format('id','name','age','phone','place','position','salary','experience'))
-        print('-'*60)
+        print('{:<5}{:<8}{:<8}{:<12}{:<12}{:<12}{:<10}{:<5}'.format('id','name','age','phone','place','position','salary','experience'))
+        print('-'*70)
         for i in employee:
-            print('{:<5}{:<8}{:<8}{:<12}{:<12}{:<10}{:<10}{:<5}'.format(i[0],i[1],i[2],i[3],i[4],i[5],i[6],i[7]))
+            print('{:<5}{:<8}{:<8}{:<12}{:<12}{:<12}{:<10}{:<5}'.format(i[0],i[1],i[2],i[3],i[4],i[5],i[6],i[7]))
     elif choice==3:
         id=int(input("Enter employee id : "))
         f=0
@@ -86,7 +87,7 @@ while True:
             elif choice==6:
                 for i in employee:
                     if id in i:
-                        update_experience=int(input("Enter  experience"))
+                        update_experience=int(input("Enter  experience : "))
                         i[7]=update_experience
                         f=1
                 if f==0:
@@ -95,4 +96,47 @@ while True:
                 break
             else:
                 print("Invalid choice")
+    elif choice==4:
+        id=int(input("Enter employee id : "))
+        f=0
+        for i in employee:
+            if id in i:
+                employee.remove(i)
+                f=1
+        if f==0:
+            print("Invalid id")
+    elif choice==5:
+        id=int(input("Enter employee id : "))
+        f=0
+        for i in employee:
+            if id in i:
+                f=1
+                task=input("Enter task : ")
+                date=datetime.datetime.now().strftime("%x")
+                days=int(input("How many days? "))
+                i.append([task,date,days])
+        if f==0:
+            print("Invalid id")
+    elif choice==6:
+        id=int(input("Enter employee id : "))
+        f=0
+        for i in employee:
+            if id in i:
+                f=1
+                print('{:<5}{:<8}{:<8}{:<12}{:<12}{:<12}{:<10}{:<5}'.format('id','name','age','phone','place','position','salary','experience'))
+                print('{:<5}{:<8}{:<8}{:<12}{:<12}{:<12}{:<10}{:<5}'.format(i[0],i[1],i[2],i[3],i[4],i[5],i[6],i[7]))
+                print("Work details :")
+                if len(i)==9:
+                    print(i[8])
+                else:
+                    print("No work")
+        if f==0:
+            print("Invalid id")
+    elif choice==7:
+        break
+    else:
+        print("Invalid choice")
+
+
+
 
