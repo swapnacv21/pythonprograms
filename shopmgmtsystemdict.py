@@ -117,4 +117,99 @@ while True:
                         f=1
                 if f==0:
                     print("Invalid id")
-            
+            elif choice==5:
+                id=int(input("Enter employee id : "))
+                f=0
+                for i in employee:
+                    if i['id']==id:
+                        f=1
+                        print('{:<5}{:<8}{:<8}{:<12}{:<12}{:<12}{:<10}{:<5}'.format('id','name','age','phone','place','position','salary','experience'))
+                        print('{:<5}{:<8}{:<8}{:<12}{:<12}{:<12}{:<10}{:<5}'.format(i['id'],i['name'],i['age'],i['phone'],i['place'],i['position'],i['salary'],i['experience']))
+                if f==0:
+                        print("Invalid id")
+            elif choice==6:
+                break
+            else:
+                print("Invalid choice")
+
+
+
+    elif choice==2:
+        while True:
+            print(
+                '''
+            1.Add Product
+            2.View Product
+            3.Update Product Details
+            4.Remove product
+            5.Search product
+            6.Exit
+            '''
+            )
+            choice=int(input("Enter your choice : "))
+            if choice==1:
+                productid=int(input("Enter product id : "))
+                productname=input("Enter product name : ")
+                producttype=input("Enter product type: ")
+                productprice=int(input("Enter price of the product : "))
+                productstock=int(input("Enter stock of the product : "))
+                product.append({'productid':productid,'productname':productname,'producttype':producttype,'productprice':productprice,'productstock':productstock})
+            elif choice==2:
+                print('{:<15}{:<15}{:<15}{:<15}{:<15}'.format('productid','productname','producttype','productprice','productstock'))
+                print('-'*70)
+                for i in product:
+                    print('{:<15}{:<15}{:<15}{:<15}{:<15}'.format(i['productid'],i['productname'],i['producttype'],i['productprice'],i['productstock']))
+            elif choice==3:
+                productid=int(input("Enter product id : "))
+                f=0
+                while True:
+                    print(
+                        '''
+                        1.Update product name
+                        2.Update product type
+                        3.Update product price
+                        4.Update product stock
+                        5.Exit
+                        '''
+                        )
+                    choice=int(input("Enter choice"))
+                    if choice==1:
+                        for i in product:
+                            if i['productid']==productid:
+                                new_name=(input("Enter new product name"))
+                                i['productname']=new_name
+                                f=1
+                        if f==0:
+                            print("Invalid id")
+                    elif choice==2:
+                        for i in product:
+                            if i['productid']==productid:
+                                new_type=(input("Enter new product type"))
+                                i['producttype']=new_type
+                                f=1
+                        if f==0:
+                            print("Invalid id")
+                    elif choice==3:
+                        for i in product:
+                            if i['productid']==productid:
+                                new_price=(input("Enter new product price"))
+                                i['productprice']=new_price
+                                f=1
+                        if f==0:
+                            print("Invalid id")
+                    elif choice==4:
+                        for i in product:
+                            if i['productid']==productid:
+                                new_stock=(input("Enter new product stock"))
+                                i['productstock']=new_stock
+                                f=1
+                        if f==0:
+                            print("Invalid id")
+
+                    elif choice==5:
+                        break
+                    
+    elif choice==3:
+        break
+    else:
+        print("Invalid choice")        
