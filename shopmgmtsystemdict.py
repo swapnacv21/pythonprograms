@@ -176,7 +176,7 @@ while True:
                     if choice==1:
                         for i in product:
                             if i['productid']==productid:
-                                new_name=(input("Enter new product name"))
+                                new_name=(input("Enter new product name : "))
                                 i['productname']=new_name
                                 f=1
                         if f==0:
@@ -184,7 +184,7 @@ while True:
                     elif choice==2:
                         for i in product:
                             if i['productid']==productid:
-                                new_type=(input("Enter new product type"))
+                                new_type=(input("Enter new product type : "))
                                 i['producttype']=new_type
                                 f=1
                         if f==0:
