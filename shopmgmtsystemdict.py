@@ -172,7 +172,7 @@ while True:
                         5.Exit
                         '''
                         )
-                    choice=int(input("Enter choice"))
+                    choice=int(input("Enter choice : "))
                     if choice==1:
                         for i in product:
                             if i['productid']==productid:
