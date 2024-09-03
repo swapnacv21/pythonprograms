@@ -192,7 +192,7 @@ while True:
                     elif choice==3:
                         for i in product:
                             if i['productid']==productid:
-                                new_price=(input("Enter new product price"))
+                                new_price=(input("Enter new product price : "))
                                 i['productprice']=new_price
                                 f=1
                         if f==0:
@@ -200,7 +200,7 @@ while True:
                     elif choice==4:
                         for i in product:
                             if i['productid']==productid:
-                                new_stock=(input("Enter new product stock"))
+                                new_stock=(input("Enter new product stock : "))
                                 i['productstock']=new_stock
                                 f=1
                         if f==0:
