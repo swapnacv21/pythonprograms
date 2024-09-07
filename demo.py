@@ -11,9 +11,11 @@ print("weight:",weight)
 address="nirappill"
 print("address",address)
 
-# data types
+# Data Types
+# --------------
 
-# 1) Numeric data type: 
+# 1) Numeric data type :
+
 # integer:
 roll_no=10
 print("roll no:",roll_no ,type(roll_no))
