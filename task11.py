@@ -3,26 +3,26 @@ limit=int(input("Enter your limit"))
 for i in range(limit):
     name=input("Enter name")
     php.add(name)
-print(php)
+print("students in php=",php)
 
 python=set()
 limit=int(input("Enter your limit"))
 for i in range(limit):
     name=input("Enter name")
     python.add(name)
-print(python)
+print("students in python=",python)
 
 java=set()
 limit=int(input("Enter your limit"))
 for i in range(limit):
     name=input("Enter name")
     java.add(name)
-print(java)
+print("students in java=",java)
 
 
 common=php.intersection(python)
 c=common.intersection(java)
-print("common name=",c)
+print("common name in 3 lang=",c)
 
 unique=python.difference(php)
 u=python.difference(java)
