@@ -22,7 +22,7 @@ def add_emp():
         place=(input("Enter place of employee : "))
         dob=(input("Enter date of birth : "))
         emp.append({'id':id,'name':name,'age':age,'salary':salary,'place':place,'dob':dob})
-        print(emp)
+        # print(emp)
 
 def edit_emp():
     id=int(input("Enter employee id : "))
@@ -94,4 +94,6 @@ while True:
                 elif sub_choice==5:
                     break
         elif f==0:
-            print('Invalid username or password')
+            print('Invalid username or password ')
+
+            # ----------------------------------
