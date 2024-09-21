@@ -4,4 +4,7 @@ def fun():
 def hello():
     print("hello")
 
+def hai():
+    print("hai ")
+
 a=30
