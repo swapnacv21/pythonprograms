@@ -162,23 +162,101 @@ while True:
                     print("Invalid  id")
             elif h_choice==5:
                 break
-    # elif choice==3:
-    #     while True:
-    #         print(
-    #             '''
-    #             1.Details of cook
-    #             2.Details of cleaner
-    #         '''
-    #         )
-            # w_choice=int(input("Enter your choice :: "))
-    #         if w_choice==1:
-    #             while True:
-    #                 print(
-    #                     '''
-    #                     1.Add cook
-    #                     2.View cook deatails
-    #                     3.Update cook details
-    #                     4.Delete cook
-    #                     5.Exit
-    #                     '''
-    #                 )
+    elif choice==3:
+        while True:
+            print(
+                '''
+                1.Details of cook
+                2.Details of cleaner
+                3.Exit
+            '''
+            )
+            w_choice=int(input("Enter your choice :: "))
+            if w_choice==1:
+                while True:
+                    print(
+                        '''
+                        1.Add cook
+                        2.View cook deatails
+                        3.Update cook details
+                        4.Delete cook
+                        5.Exit
+                        '''
+                    )
+                    cook_choice=int(input("Enter your choice : "))
+                    if cook_choice==1:
+                        cook_id=int(input("Enter id of cook : "))
+                        cook_name=input("Enter name of cook : ")
+                        cook_place=input("Enter place : ")
+                        cook_contact=int(input("Enter contact number : "))
+                        workers.append({'cook_id':cook_id,'cook_name':cook_name,'cook_place':cook_place,'cook_contact':cook_contact})
+                    elif cook_choice==2:
+                        print('{:<12}{:<12}{:<12}{:<12}'.format('cook_id','cook_name','cook_place','cook_contact'))
+                        print('-'*70)
+                        for i in workers:
+                            print('{:<12}{:<12}{:<12}{:<12}'.format(i['cook_id'],i['cook_name'],i['cook_place'],i['cook_contact']))
+                    elif cook_choice==3:
+                        id=int(input("enter cook id : "))
+                        f=0
+                        for i in workers:
+                            if i['cook_id']==id:
+                                f=1
+                                new_cname=input("Enter new name : ")
+                                new_contact=int(input("Enter new phone number : "))
+                                i['cook_name']=new_cname
+                                i['cook_contact']=new_contact
+                    elif cook_choice==4:
+                        id=int(input("Enter cook id : "))
+                        f=0
+                        for i in workers:
+                            if i['cook_id']==id:
+                                f=1
+                                workers.remove(i)
+                    elif cook_choice==5:
+                        break
+            elif w_choice==2:
+                while True:
+                    print(
+                        '''
+                        1.Add cleaner
+                        2.View cleaner details
+                        3.Update cleaner
+                        4.Delete cleaner
+                        5.Exit
+                        '''
+                    )
+                    clean_choice=int(input("Enter your choice : "))
+                    if clean_choice==1:
+                        cleaner_id=int(input("Enter id : "))
+                        cleaner_name=input("Enter name of cleaner")
+                        cleaner_place=input("Enter place of cleaner : ")
+                        cleaner_phone=int(input("Enter contact : "))
+                        workers.append({'cleaner_id':cleaner_id,'cleaner_name':cleaner_name,'cleaner_place':cleaner_place,'cleaner_phone':cleaner_phone})
+                    elif clean_choice==2:
+                        print('{:<12}{:<12}{:<12}{:<12}'.format('cleaner_id','cleaner_name','cleaner_place','cleaner_phone'))
+                        print('-'*70)
+                        for i in workers:
+                            print('{:<12}{:<12}{:<12}{:<12}'.format(i['cleaner_id'],i['cleaner_name'],i['cleaner_place'],i['cleaner_phone']))
+                    elif clean_choice==3:
+                        id=int(input("enter cleaner id : "))
+                        f=0
+                        for i in workers:
+                            if i['cleaner_id']==id:
+                                f=1
+                                new_clname=input("Enter new name : ")
+                                new_clcontact=int(input("Enter new phone number : "))
+                                i['cleaner_name']=new_clname
+                                i['cleaner_phone']=new_clcontact
+                    elif clean_choice==4:
+                        id=int(input("Enter cleaner id : "))
+                        f=0
+                        for i in workers:
+                            if i['cleaner_id']==id:
+                                f=1
+                                workers.remove(i)
+                    elif clean_choice==5:
+                        break
+            elif w_choice==3:
+                break
+    elif choice==4:
+        break
