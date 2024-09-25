@@ -1,4 +1,4 @@
-f=open('pythonprograms/filehandling/demo.txt','a')
+# f=open('pythonprograms/filehandling/demo.txt','a')
 
 '''# writing a content when creating a file'''
 
@@ -26,6 +26,8 @@ f=open('pythonprograms/filehandling/demo.txt','a')
 # c=f.readlines()
 # print(c)
 
+# reverse:
+# -----------
 # d=f.readlines()
 # f.seek(0)
 # for i in range(len(d)):
@@ -33,5 +35,94 @@ f=open('pythonprograms/filehandling/demo.txt','a')
 #     print(a[::-1])
     # print(a)
 
-f.write('happy birthday \n')
-f.write('namaste')
+# count letters of a string:
+# ------------------
+
+# f=open('pythonprograms/filehandling/demo.txt','r')
+# e=f.readlines()
+# f.seek(0)
+# letter=0
+# for i in range(len(e)):
+#     a=f.readline().strip()
+#     for i in a:
+#         if i !=' ':
+#             letter+=1
+# print(letter)
+
+# output: 13
+
+'''how many capital letters and small letters:'''
+# -----------------------------------------------
+
+# f=open('pythonprograms/filehandling/demo.txt','r')
+# e=f.readlines()
+# f.seek(0)
+# letter=0
+# cap=0
+# for i in range(len(e)):
+#     a=f.readline().strip()
+#     for i in a:
+#         if i !=' ':
+#             if i.isupper():
+#                 cap+=1
+#             letter+=1
+# print("total no of letters : ",letter)
+# print("total no of capital letters : ",cap)
+# print("toatal no of small letters : ",letter-cap)
+
+'''ouput:'''
+# total no of letters :  13
+# total no of capital letters :  2
+# toatal no of small letters :  
+
+
+'''how many words:'''
+# --------------------
+
+# f=open('pythonprograms/filehandling/demo.txt','r')
+# e=f.readlines()
+# f.seek(0)
+# letter=0
+# cap=0
+# words=0
+# for i in range(len(e)):
+#     a=f.readline().strip()
+#     s=a.split()
+#     for i in s:
+#         if i!='':
+#             words+=1
+#     for i in a:
+#         if i !=' ':
+#             if i.isupper():
+#                 cap+=1
+#             letter+=1
+# print("total no of letters : ",letter)
+# print("total no of capital letters : ",cap)
+# print("toatal no of small letters : ",letter-cap)
+# print('total no of words : ',words)
+
+
+'''Number of lines'''
+# ----------------------------------
+# f=open('pythonprograms/filehandling/demo.txt','r')
+# e=f.readlines()
+# f.seek(0)
+# letter=0
+# cap=0
+# words=0
+# for i in range(len(e)):
+#     a=f.readline().strip()
+#     s=a.split()
+#     for i in s:
+#         if i!='':
+#             words+=1
+#     for i in a:
+#         if i !=' ':
+#             if i.isupper():
+#                 cap+=1
+#             letter+=1
+# print("total no of letters : ",letter)
+# print("total no of capital letters : ",cap)
+# print("toatal no of small letters : ",letter-cap)
+# print('total no of words : ',words)
+# print("no of lines : ",len(e)) ------------*
