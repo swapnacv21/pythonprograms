@@ -126,3 +126,38 @@
 # print("toatal no of small letters : ",letter-cap)
 # print('total no of words : ',words)
 # print("no of lines : ",len(e)) ------------*
+
+
+# append()- a 
+# -----------------
+
+# f=open('pythonprograms/filehandling/demo.txt','a')
+# f.write('\nusing append')
+# f.write('\nsee you')
+
+
+'''delete text file or a python file:'''
+# ------------------------------------
+
+# import os
+# os.remove('demo.txt')
+
+'''to check a file is present or not using os:'''
+# ------------------------------------
+# import os
+# if os.path.exists('demo.txt'):
+#     print('file found')
+# else:
+#     print('not')
+
+'''To create a folder -(mkdir)'''
+# ---------------------------------
+
+# import os
+# os.mkdir('sample.txt')
+
+'''To delete a  folder -(rmdir)'''
+# -----------------------------------
+
+# import os
+# os.rmdir('sample.txt')
