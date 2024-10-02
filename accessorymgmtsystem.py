@@ -192,18 +192,18 @@ while True:
                 print('-'*70)
                 for i in accessories:
                     print('{:<5}{:<8}{:<8}{:<12}{:<12}{:<12}'.format(i['id'],i['type'],i['brand'],i['material'],i['price'],i['stock']))
-            # elif customer_choice==5:
-                # id=int(input("Enter accessory id : "))
-                # f=0
-                # for i in accessories:
-                #     if i['id']==id:
-                #         f=1
-                #         if i['stock']>0:
-                #             customers['accessory'].append(i['id'])
-                #             i['stock']-=1
-                #             print("accessory added")
-                #         else:
-                #             print("out of stock")
+            elif customer_choice==5:
+                id=int(input("Enter accessory id : "))
+                f=0
+                for i in accessories:
+                    if i['id']==id:
+                        f=1
+                        if i['stock']>0:
+                            customers['accessory'].append(i['id'])
+                            i['stock']-=1
+                            print("accessory added")
+                        else:
+                            print("out of stock")
             elif customer_choice==6:
                 break
     elif choice==3:
