@@ -81,9 +81,9 @@ remaining balance :  -3000'''
 
 '''5) Arbitory keyword argument : '''
 
-class Demo:
-    def __init__(self,**a):
-        print("a=",a)
-obj=Demo(name='swapna',amount=20000)
+# class Demo:
+#     def __init__(self,**a):
+#         print("a=",a)
+# obj=Demo(name='swapna',amount=20000)
 
-output: a= {'name': 'swapna', 'amount': 20000}
+# output: a= {'name': 'swapna', 'amount': 20000}

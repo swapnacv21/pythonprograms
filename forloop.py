@@ -55,9 +55,9 @@
 
 # question 7) reverse of a number:
 
-a=int(input("enter a number"))
-rev=0
-for i in range(a):
+# a=int(input("enter a number"))
+# rev=0
+# for i in range(a):
     
 
 # question 8) sum of digits:

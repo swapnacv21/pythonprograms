@@ -29,3 +29,8 @@ std.python()
 std.php()
 std1=synnefo
 std1.python()
+
+'''inheritance :'''
+# -----------------------
+
+
