@@ -1,4 +1,4 @@
-import re 
+import re
 a='swapnavenu43@gmail.com'
 
 # print(re.search('^[a-z].*@gmail.com$',a))
@@ -8,3 +8,5 @@ if re.search('^[a-z].*@gmail.com$',a):
     print("valid")
 else:
     print("invalid")
+
+# output: valid
