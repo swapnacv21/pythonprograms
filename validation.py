@@ -1,14 +1,15 @@
-import re
-# a='abcd'
+import re 
 
+a='abcd'
 # print(re.search('a',a))
-# output: <re.Match object; span=(0, 1), match='a'>
+# OUTPUT: <re.Match object; span=(0, 1), match='a'>
 
 # print(re.search('abcd',a))
-# output: <re.Match object; span=(0, 4), match='abcd'>
+# OUTPUT: output: <re.Match object; span=(0, 4), match='abcd'>
 
-# print(re.search('s',a))
-# output: None
+print(re.search('s',a))
+# OUTPUT : None
+
 # --------------------------------------------
 
 '''example: 1'''
