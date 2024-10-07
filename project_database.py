@@ -71,7 +71,8 @@ while True:
                 new_phone=input("enter new phone no : ")
                 con.execute("update emp set phone_no=? where phone_no=?",(new_phone,old_phone))
                 con.commit()
-            elif sub_choice==6:
+            elif set==6:
                 break
+       
     elif choice==6:
         break
