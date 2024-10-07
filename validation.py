@@ -7,7 +7,7 @@ a='abcd'
 # print(re.search('abcd',a))
 # OUTPUT: output: <re.Match object; span=(0, 4), match='abcd'>
 
-print(re.search('s',a))
+# print(re.search('s',a))
 # OUTPUT : None
 
 # --------------------------------------------
@@ -17,7 +17,7 @@ print(re.search('s',a))
 # if re.search('s',a):
 #     print('match')
 # else:
-#     print('not')
+#     print("not")
 
 # output: not
 # -------------------------------------------
@@ -25,9 +25,9 @@ print(re.search('s',a))
 '''example: 2'''
 
 # if re.search('a',a):
-#     print('match')
+#     print("match")
 # else:
-#     print('not')
+#     print("not")
 
 # output: match
 # --------------------------------------------
@@ -42,10 +42,11 @@ print(re.search('s',a))
 # print(re.search('b.',a))
 # output: <re.Match object; span=(1, 3), match='bc'>
 
+
 # print(re.search('c.',a))
 # output: <re.Match object; span=(2, 4), match='cd'>
 
-# print(re.search('d.',a))
+print(re.search('d.',a))
 # output: None
 # --------------------------------------------------------
 
