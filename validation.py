@@ -94,7 +94,7 @@ print(re.search('d.',a))
 # print(re.search('c.+',a))
 # output: <re.Match object; span=(2, 4), match='cd'>
 
-# print(re.search('d.+',a))
+print(re.search('d.+',a))
 # output: None
 
 # ----------------------------------------------------------
