@@ -1,6 +1,6 @@
 import re 
 
-a='abcd'
+# a='abcd'
 # print(re.search('a',a))
 # OUTPUT: <re.Match object; span=(0, 1), match='a'>
 
@@ -46,7 +46,7 @@ a='abcd'
 # print(re.search('c.',a))
 # output: <re.Match object; span=(2, 4), match='cd'>
 
-print(re.search('d.',a))
+# print(re.search('d.',a))
 # output: None
 # --------------------------------------------------------
 
@@ -94,7 +94,7 @@ print(re.search('d.',a))
 # print(re.search('c.+',a))
 # output: <re.Match object; span=(2, 4), match='cd'>
 
-print(re.search('d.+',a))
+# print(re.search('d.+',a))
 # output: None
 
 # ----------------------------------------------------------
