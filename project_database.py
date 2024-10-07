@@ -18,7 +18,7 @@ while True:
     )
     choice=int(input("Enter your choice : "))
     if choice==1:
-        id=int(input("Enter employee id : "))
+        id=int(input("Enter employee id: "))
         name=input("Enter employee name : ")
         age=int(input("Enter age of employee : "))
         place=input("Enter place of employee : ")
@@ -73,6 +73,7 @@ while True:
                 con.commit()
             elif set==6:
                 break
-       
+    elif choice==5:
+    #delete code 
     elif choice==6:
         break
