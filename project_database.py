@@ -71,9 +71,16 @@ while True:
                 new_phone=input("enter new phone no : ")
                 con.execute("update emp set phone_no=? where phone_no=?",(new_phone,old_phone))
                 con.commit()
-            elif set==6:
+            elif sub_choice==6:
                 break
+    elif choice==4:
+        user=int(input("enter employee id to delete : "))
+        data=con.execute("delete from emp where id=?",(user,)) 
+        con.commit()
     elif choice==5:
-    #delete code 
+        user=int(input("enter employee id:  "))
+        data=con.execute("select * from emp where id=?",(user,))
+        for i in data:
+            print(i)
     elif choice==6:
         break

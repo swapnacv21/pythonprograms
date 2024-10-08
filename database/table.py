@@ -107,3 +107,80 @@ except:
 # user=int(input("enter roll_no to delete : "))
 # data=con.execute("delete from student_details where roll_no=?",(user,)) #--------------------> deleting a value based on user input
 # con.commit()
+
+# data=con.execute("select * from student_details where name like 'a%' ") #-------------------> selecting a value based on first letter 
+# for i in data:
+#     print(i)
+
+# output: (2, 'aswin', 21, 80.0)
+
+# data=con.execute("select * from student_details where name like '%a' ") #------------------------> last letter
+# for i in data:
+#     print(i)
+
+# output:
+# (17, 'sandra', 22, 85.0)
+# (23, 'hanna', 22, 92.0)
+
+# data=con.execute("select * from student_details where name like '_a%' ") #------------------------> 2nd letter
+# for i in data:
+#     print(i)
+
+# output:
+# (17, 'sandra', 22, 85.0)
+# (23, 'hanna', 22, 92.0)
+
+# data=con.execute("select * from student_details where name like '__l%' ") #------------------------> 3rd letter
+# for i in data:
+#     print(i)
+
+# output: (22, 'lilly', 21, 78.0)
+
+
+'''order by'''
+
+# data=con.execute("select * from student_details order by name")  #----------------> displays name in acending order
+# for i in data:
+#     print(i)
+
+# output:
+# (2, 'aswin', 21, 80.0)
+# (23, 'hanna', 22, 92.0)
+# (22, 'lilly', 21, 78.0)
+# (17, 'sandra', 22, 85.0)
+
+# data=con.execute("select * from student_details order by name desc")  #----------------> displays name in descending order
+# for i in data:
+#     print(i)
+
+# output: 
+# (17, 'sandra', 22, 85.0)
+# (22, 'lilly', 21, 78.0)
+# (23, 'hanna', 22, 92.0)
+# (2, 'aswin', 21, 80.0)
+
+'''group by'''
+
+# --> using aggregate functions:
+
+# data=con.execute("select name,max(mark) from student_details group by name")
+# for i in data:
+#     print(i)
+
+# data=con.execute("select name,min(mark) from student_details group by name")
+# for i in data:
+#     print(i)
+
+# data=con.execute("select name,count(mark) from student_details group by name")
+# for i in data:
+#     print(i)
+# ====
+
+# data=con.execute("select name,sum(mark) from student_details group by name")
+# for i in data:
+#     print(i)
+
+# data=con.execute("select name,average(mark) from student_details group by name")
+# for i in data:
+#     print(i)
+# ====
