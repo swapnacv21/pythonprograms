@@ -95,7 +95,7 @@ except:
 
 # old_name=input("enter existing name :") #------------------------> to update an existing value based on user input
 # new_name=input("enter new name : ")
-# data=con.execute("update student_details set name=? where name=?",(new_name,old_name))
+# con.execute("update student_details set name=? where name=?",(new_name,old_name))
 # con.commit()
 
 # con.execute("delete from student_details where roll_no=1") #------> deleting a value based on roll_no
