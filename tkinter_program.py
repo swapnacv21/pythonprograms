@@ -1,4 +1,7 @@
+import sqlite3
 import tkinter
+
+
 
 # win=tkinter.Tk()
 # win.title("tkinter intro")
@@ -27,6 +30,7 @@ import tkinter
 '''Example : form using tkinter:'''
 # --------------------------------------
 
+
 win=tkinter.Tk()
 win.title("Login Page")
 win.maxsize(500,500)
@@ -39,6 +43,16 @@ def reg_form():
     win1.maxsize(500,500)
     win1.minsize(400,400)
     win1.configure(bg="lightblue")
+    def reg():
+        con=sqlite3.connect("user.db")
+        # con.execute('create table user(uname text,password text)')
+        con.execute('insert into user(uname,password)values(?,?)',(e1.get(),e2.get()))
+        con.commit()
+        win1.destroy()
+        # print(e1.get(),e2.get())  #----> to display output in terminal
+
+
+
     l1=tkinter.Label(win1,text="Register form",bg="lightblue",fg="black")
     l1.place(x=180,y=10)
 
@@ -52,10 +66,32 @@ def reg_form():
     e2=tkinter.Entry(win1)
     e2.place(x=200,y=70)
 
-    b1=tkinter.Button(win1,text="Register",bg="black",activebackground="gray",fg="white",activeforeground='green',padx=10,pady=10)
+    b1=tkinter.Button(win1,text="Register",bg="black",activebackground="gray",fg="white",activeforeground='green',padx=10,pady=10,command=reg)
     b1.place(x=150,y=120)
 
     win1.mainloop()
+
+def home():
+    win2=tkinter.Tk()
+    l1=tkinter.Label(win2,text="Home Page")
+    l1.pack()
+    b1=tkinter.Button(win2,text="logout",command=win2.quit)
+    b1.pack()
+    win2.mainloop()
+
+
+def login():
+    con=sqlite3.connect('user.db')
+    data=con.execute("select * from user where uname=? and password=?",(e1.get(),e2.get()))
+    f=0
+    for i in data:
+        f=1
+        home()
+    if f==0:
+        l4.config(text="invalid username or password")
+        
+
+
 
 l1=tkinter.Label(win,text="Login page",bg="lightblue",fg="black")
 l1.place(x=170,y=10)
@@ -70,7 +106,10 @@ l3.place(x=80,y=70)
 e2=tkinter.Entry(win)
 e2.place(x=200,y=70)
 
-b1=tkinter.Button(win,text="Submit",bg="white",activebackground="gray",fg="black",activeforeground='green',padx=10,pady=10)
+l4=tkinter.Label(win)
+l4.place(x=150,y=30)
+
+b1=tkinter.Button(win,text="Login",bg="white",activebackground="gray",fg="black",activeforeground='green',padx=10,pady=10,command=login)  
 b1.place(x=150,y=120)
 
 b2=tkinter.Button(win,text="Register",bg="black",activebackground="gray",fg="white",activeforeground='green',padx=10,pady=10,command=reg_form)
