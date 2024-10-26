@@ -1,8 +1,6 @@
 import sqlite3
 import tkinter
 
-
-
 # win=tkinter.Tk()
 # win.title("tkinter intro")
 # win.maxsize(500,500)

@@ -40,6 +40,7 @@
 #         print(a)
 #     a+=1
 
+
 # question 3: odd numbers:
 
 # a=int(input("enter starting number"))

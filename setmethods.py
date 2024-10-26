@@ -149,3 +149,7 @@
 # print("s=",s)
 
 # output: s= {4, 5, 6, 7}
+
+
+# for i in range(1,11):
+#     print(i)

@@ -1,4 +1,4 @@
-# factorial
+# # factorial
 
 # a=int(input("enter a number"))
 # fact=1
@@ -23,13 +23,13 @@
 
 # reverse of a number
 
-# num=int(input("enter a number"))
-# rev=0
-# while num>0:
-#     digit=num%10
-#     rev=rev*10+digit
-#     num=num//10
-# print(rev)
+num=int(input("enter a number"))
+rev=0
+while num>0:
+    digit=num%10
+    rev=rev*10+digit
+    num=num//10
+print(rev)
 
 # sum of digits:
 
@@ -52,10 +52,10 @@
 
 # reverse of a string :
 
-a=input("enter a string")
-rev=""
-l=len(a)-1
-while l>=0:
-    rev+=a[l]
-    l-=1
-print(rev)
+# a=input("enter a string")
+# rev=""
+# l=len(a)-1
+# while l>=0:
+#     rev+=a[l]
+#     l-=1
+# print(rev)
